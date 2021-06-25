@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    background-color: #f3c67d;
+    height: 100vh;
+}
+.bunny {
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.canvas {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 27rem;
+    width: 100%;
+}
+.head {
+    width: 10rem;
+    height: 10rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    margin-top: 5rem;
+}
+.nose {
+    width: 1rem;
+    height: 0.9rem;
+    background-color: #f5cac3;
+    border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+    position: absolute;
+    z-index: 7;
+    margin-top: 10.5rem;
+}
+.left-pupil {
+    height: 1.8rem;
+    width: 1.2rem;
+    background-color: #84a59d;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 4rem;
+    z-index: 5;
+    margin-top: 8.5rem;
+}
+.left-eyelid {
+    height: 0;
+    width: 1.3rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    z-index: 6;
+    position: absolute;
+    margin-right: 4rem;
+    margin-top: 8.4rem;
+
+    animation-name: blinking;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.right-pupil {
+    height: 1.8rem;
+    width: 1.2rem;
+    background-color: #84a59d;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 4rem;
+    z-index: 5;
+    margin-top: 8.5rem;
+}
+.right-eyelid {
+    height: 0;
+    width: 1.3rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    z-index: 6;
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: 8.4rem;
+
+    animation-name: blinking;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.right-ear {
+    width: 5rem;
+    height: 8rem;
+    background-color: #f7ede2;
+    border-radius: 90% 10% 87% 13% / 88% 10% 90% 12%;
+    position: absolute;
+    margin-left: 7.5rem;
+}
+.right-auricle {
+    width: 3rem;
+    height: 6.4rem;
+    background-color: #f5cac3;
+    border-radius: 90% 10% 87% 13% / 88% 10% 90% 12%;
+    position: absolute;
+    left: 1.4rem;
+    top: 0.5rem;
+    z-index: 4;
+}
+.left-ear {
+    width: 5rem;
+    height: 8rem;
+    background-color: #f7ede2;
+    border-radius: 11% 89% 9% 91% / 12% 87% 13% 88%; 
+    position: absolute;
+    margin-right: 7.5rem;
+}
+.left-auricle {
+    width: 3rem;
+    height: 6.4rem;
+    background-color: #f5cac3;
+    border-radius: 11% 89% 9% 91% / 12% 87% 13% 88%; 
+    position: absolute;
+    right: 1.4rem;
+    top: 0.5rem;
+}
+.cheeks {
+    width: 11.5rem;
+    height: 5rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10rem;
+}
+.chest {
+    width: 10.5rem;
+    height: 10.5rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 13.5rem;
+}
+.right-paw {
+    width: 3.6rem;
+    height: 11rem;
+    background-color: #f7ede2;
+    border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
+    position: absolute;
+    margin-left: 4.9rem;
+    z-index: 2;
+    margin-top: 16rem;
+}
+.left-paw {
+    width: 3.6rem;
+    height: 11rem;
+    background-color: #f7ede2;
+    border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
+    position: absolute;
+    margin-right: 6.3rem;
+    z-index: 2;
+    margin-top: 16rem;
+}
+.bottom {
+    width: 10rem;
+    height: 10.8rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 11.5rem;
+    z-index: 1;
+    margin-top: 14.5rem;
+}
+.back-paw {
+    width: 4rem;
+    height: 2.3rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 13.1rem;
+    z-index: 2;
+    margin-top: 24.6rem;
+    transform: rotate(-23deg);
+}
+.tail {
+    width: 4rem;
+    height: 4rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 23rem;
+    margin-top: 18.5rem;
+}
+.mouth {
+    width: 3.2rem;
+    height: 2.5rem;
+    background-color: #f7ede2;
+    z-index: 5;
+    position: absolute;
+    margin-top: 11.4rem;
+}
+.mouth .left-part {
+    width: 2.5rem;
+    height: 3rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    z-index: 6;
+    position: absolute;
+    clip-path: circle(28.9% at 53% 95%);
+    right: 1rem;
+    bottom: 1.9rem;
+    border: 0.25rem solid #f5cac3;
+    transform: rotate(-8deg);
+    margin-top: 5rem;
+}
+.mouth .right-part {
+    width: 2.5rem;
+    height: 3rem;
+    background-color: #f7ede2;
+    border-radius: 50%;
+    z-index: 6;
+    position: absolute;
+    clip-path: circle(28.9% at 53% 95%);
+    left: 1rem;
+    bottom: 1.9rem;
+    border: 0.25rem solid #f5cac3;
+    transform: rotate(8deg);
+    margin-top: 5rem;
+}
+
+
+
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.message-block {
+    margin: 0;
+    background-color: #f7ede2;
+    padding: 1rem;
+    width: 15rem;
+}
+.message-block #message {
+    color: #000000;
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.answer-block {
+    margin: 0;
+    padding: 1rem;
+}
+.talk-button-block .talk {
+    color: #000000;
+    background-color: #f7ede2;
+    margin: 0;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    border: 2px solid #f7ede2;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.talk-button-block .talk:hover {
+    color: #8d8d8d;
+}
+.talk-button-block #talk-button {
+    border-radius: 45%;
+    border-color: #f28482;
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f28482;
+    color: #f7ede2;
+}
+.talk-button-block #talk-button:hover {
+    color: #f7ede2;
+    background-color: #84a59d;
+    border-color: #84a59d;
+}
+
+.talk-button-block #answer-options {
+ max-width: 60rem;
+ text-align: center;
+}
+#bye-button {
+    display: none;
+    border-radius: 45%;
+    border-color: #f28482;
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f28482;
+    color: #f7ede2;
+}
+#bye-button:hover {
+    color: #f7ede2;
+    background-color: #84a59d;
+    border-color: #84a59d;
+}
+@keyframes blinking {
+    0% {
+        height: 0;
+        border: 0;
+    }
+    25% {
+        height: 1.81rem;
+        border-bottom: 0.25rem solid #afa9a2;
+    }
+    50% {
+        height: 0;
+        border:0;
+    }
+    75% {
+        height: 0;
+        border:0;
+    }
+    100% {
+        height: 0;
+        border:0;
+    }
+} 
