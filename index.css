@@ -313,3 +313,45 @@ body {
         border:0;
     }
 } 
+#bunny.sad .mouth .left-part {
+    width: 2.5rem;
+    height: 3rem;
+    background-color: #f7ede2;
+    border-radius: 20%;
+    z-index: 6;
+    position: absolute;
+    clip-path: circle(28.9% at 53% 95%);
+    right: 1rem;
+    bottom: 1.6rem;
+    border: 0.25rem solid #f5cac3;
+    transform: rotate(-42deg);
+    margin-top: 5rem;
+    margin-right: 0.5rem;
+}
+#bunny.sad .mouth .right-part {
+    width: 2.5rem;
+    height: 3rem;
+    background-color: #f7ede2;
+    border-radius: 20%;
+    z-index: 6;
+    position: absolute;
+    clip-path: circle(28.9% at 53% 95%);
+    left: 1rem;
+    bottom: 1.68rem;
+    border: 0.25rem solid #f5cac3;
+    transform: rotate(42deg);
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+}
+#bunny.sad .left-pupil {
+    border-radius: 62% 38% 50% 50% / 50% 34% 66% 50%;
+}
+#bunny.sad .left-eyelid {
+    border-radius: 62% 38% 50% 50% / 50% 34% 66% 50%;
+}
+#bunny.sad .right-pupil {
+    border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%;
+}
+#bunny.sad .right-eyelid {
+    border-radius: 40% 60% 50% 50% / 40% 50% 50% 60%;
+}

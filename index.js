@@ -27,12 +27,12 @@ let messageTreeList = [
         {
             id: 2,
             text: "That's nice to hear.",
-            emotion: "normal"
+            emotion: "happy"
         },
         {
             id: 3,
             text: "Poor you, you should find time to rest.",
-            emotion: "normal"
+            emotion: "sad"
         }
     ],
     [
@@ -63,19 +63,19 @@ let messageTreeList = [
         {
             id: 3,
             text: "You mean contrast? It works pretty well, yes. But for me it's a risky combination.",
-            emotion: "normal"
+            emotion: "thinking"
         },
         {
             id: 4,
             text: "Same thing here, they just make me happy and remind me my childhood.",
-            emotion: "normal"
+            emotion: "happy"
         }
     ],
     [
         {
             id: 1,
             text: "i'm bad at math.", 
-            emotion: "normal", 
+            emotion: "sad", 
             options: [
                 {
                     text: "Same here.",
@@ -95,7 +95,7 @@ let messageTreeList = [
         {
             id: 3,
             text: "Maybe for you. But for me, it's hard to count with my paws.",
-            emotion: "normal"
+            emotion: "sad"
         }
     ]
 ]
